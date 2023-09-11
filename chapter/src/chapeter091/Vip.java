@@ -1,4 +1,4 @@
-package chapeter09;
+package chapeter091;
 
 public class Vip {
     // 会员号

@@ -1,5 +1,7 @@
 package chapeter09;
 
+import chapeter091.Student;
+
 public class StudentTest {
     public static void main(String[] args){
         //不能通过类名来直接访问“实例变量”
@@ -11,7 +13,7 @@ public class StudentTest {
 
         //s1 s2 也属于局部变量
         //s1这个局部变量叫引用
-        Student s1 = new Student();
+        chapeter091.Student s1 = new chapeter091.Student();
         //这么访问实例变量
         //语法：引用.实例变量名
         System.out.println(s1.no);
@@ -23,7 +25,7 @@ public class StudentTest {
         System.out.println("__________________________________________");
 
         //s2也是局部变量叫引用
-        Student s2 = new Student();
+        chapeter091.Student s2 = new Student();
         System.out.println(s2.no);
         System.out.println(s2.name);
         System.out.println(s2.age);
@@ -47,10 +49,9 @@ public class StudentTest {
     }
     public static void method(){
         //i s1 s2 都是main方法中的局部变量这里无法访问。
-        /*
-        System.out.println(i);
-        System.out.println(s1);
-        System.out.println(s2);
-         */
+
+        //System.out.println(i);
+        //System.out.println(s1);
+        //System.out.println(s2);
     }
 }
